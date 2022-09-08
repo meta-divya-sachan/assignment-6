@@ -1,0 +1,216 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>METACUBE PARKING SYSTEM</title>
+    <meta name="description" content="first page">
+    <meta name="EMPLOYEE" content="PARKING SYSTEM">
+    <LINk rel="STYLESHEET" href="./STYLE.CSS"></LINk>
+    <script type="text/javascript" src="script.js"></script>
+    
+    
+</head>
+
+<body>
+
+    <h2 class="head"> Parking System METACUBE</h2>
+    <div class="box">
+        <div class="box1">
+            <nav class="navigation">
+                <ul>
+                    <li><a href="#pricing"> Pricing </a></li>
+                    <li><a href="#employeedetails"> Add Employee </a></li>
+                    <li><a href="#vdetail"> Add Vehicle </a></li>
+                    <li><a href="#feedback"> Give Feedback </a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div id="box2">
+            <img src="./parking-lot-cement-block.jpg" alt="parking" style="margin-left: 100px;">
+        </div>
+    </div>
+    </div>
+    <hr>
+    <h2 class="head" id="vdetail">Fill Vehicle Details</h2>
+    <hr>
+    <div class="vdetail" >
+        <form action="vde">
+
+            <div >
+                <label for="company">Vehicle Company</label><br>
+                <input type="text" id="vname" name="comny" >
+            </div>
+
+
+            <br>
+
+            <div class="opacity" id="opacity1">
+                <label for="model">Vehicle Model</label><br>
+                <input type="text" name="model" id="vmdl">
+
+
+            </div>
+            <br>
+
+            <div class="opacity" id="opacity2">
+                <p>type</p>
+                <input type="radio" name="vtype" id="car">
+                <label for="vtype">Four Wheelers</label>
+           
+            <br>
+            <input type="radio" name="vtype" id="cy">
+            <label for="vtype">cycle</label>
+            <br>
+
+
+            <input type="radio" name="vtype" id="cycle">
+            <label for="vtype">Motorcycle</label>
+        </div>
+            <br>
+
+            <div class="opacity" id="opacity3">
+                <label for="vnumber">Vehicle Number</label><br>
+                <input type="text" name="vnum" id="venum">
+            </div>
+            <br>
+
+
+            <div class="opacity" id="opacity4">
+                <label for="employeeId">Employee ID</label><br>
+                <input type="text" name="eid" id="id">
+            </div>
+            <br>
+            <div class="opacity" id="opacity5">
+                <label for="identification">Identification</label><br>
+                <input type="text" name="identi" id="idnty">
+
+            </div>
+
+
+        </form>
+        <button id="button" onclick="setOpacity1()">Next</button>
+    </div>
+    <hr>
+
+    <h2 class="head" id="pricing">Pricing</h2>
+    <div class="pricing">
+
+
+
+        <section style="display: flex; height: 250px;">
+            <div class="main-box">
+                Cycle
+                <span class="inside-box">
+                    <b>$100</b>
+                    /Month
+                </span>
+                $5 Daily
+                $100 Monthly
+                $500 Yearly
+                <button>Purchase Now</button>
+            </div>
+
+            <div class="main-box">
+                MotorCycle
+                <span class="inside-box">
+                    <b>$200</b>
+                    /Month
+                </span>
+                $10 Daily
+                $200 Monthly
+                $1000 Yearly
+                <button>Purchase Now</button>
+            </div>
+            <div class="main-box">
+                Four Wheelers
+                <span class="inside-box">
+                    <b>$500</b>
+                    /Month
+                </span>
+                $20 Daily
+                $500 Monthly
+                $3500 Yearly
+                <button>Purchase Now</button>
+            </div>
+        </section>
+
+
+
+    </div>
+    <hr>
+
+    <h2 class="head" id="feedback"><b>Get In Touch</b></h2>
+
+    <div class="feedback">
+
+        <form action="feedback">
+            <p class="head">
+
+            </p>
+            <br>
+            <br>
+            <input type="text" name="in" id="inn" placeholder="divya sachan">
+            <br>
+            <br>
+            <input type="text" name="mail" id="mailid" placeholder="Email">
+            <br>
+            <br>
+            <input type="text" name="sub" id="subject" placeholder="Subject" aria-live="polite">
+            <br>
+            <br>
+            <textarea name="textarea" id="txt" cols="30" rows="10" placeholder="Message">
+        </textarea>
+
+            <br>
+            <br>
+
+        </form>
+
+
+
+    </div>
+    <hr>
+
+    <form action="employee details" id="employeedetails">
+        <div class="employee">
+            <h1 class="head">Employee Details</h1>
+            <p>Please fill this form to proceed.</p>
+            <hr>
+            <label for="FullName">Full Name</label><br>
+            <input type="text" name="name" id="name">
+            <br>
+
+            <label for="gender"> Gender</label><br>
+            <input type="text">
+            <br>
+            <label for="email">Email</label><br>
+            <input type="email" name="emailid" id="pmail">
+            <br>
+            <label for="passwrd">Password</label><br>
+            <input type="password" name="pass" id="pswd">
+            <br>
+            <label for="confirmpass">Confirm Password</label><br>
+            <input type="password" name="cnfpass" id="cpass">
+            <br>
+            <label for="number">Contact Number</label><br>
+            <input type="number" name="contact" id="cnumber">
+            <br>
+            <br>
+            <button type="submit">Submit</button>
+
+
+
+        </div>
+    </form>
+
+
+
+    <!-- <a href="C:\Users\Public\HTML\ASSIGNMENT-1\addemployee.html"> <h4>Add Employee</h4></a> -->
+    <!-- <a href="C:\Users\Public\HTML\ASSIGNMENT-1\addvehicle.html"><h4>Add Vehicle</h4></a> -->
+    <!-- <a href="C:\Users\Public\HTML\ASSIGNMENT-1\givefeedback.html"><h4>Give Feedback</h4></a> -->
+    <!-- <a href="C:\Users\Public\HTML\ASSIGNMENT-1\Pricing.html"><h4>Pricing</h4></a> -->
+</body>
+
+</html>
