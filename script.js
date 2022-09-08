@@ -5,11 +5,11 @@ var name, gender, email, password, matchpassword, number, currentfield, form, mo
 window.addEventListener('keypress', function(e){
   if(e.keyCode==32){
     onBlur();
-  }``
+  }
 }, false);
 
 function form(){
-  document.body.style.square
+  document.body.style.
 }
 
 
